@@ -1,0 +1,71 @@
+.country-selector {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.selected-country {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.country-flag {
+  margin-right: 8px;
+}
+
+.country-code {
+  font-size: 14px;
+  color: #333;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 250px;
+  max-height: 300px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  overflow-y: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.search-box {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+}
+
+.country-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.country-item {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.country-item:hover {
+  background-color: #f0f0f0;
+}
+
+.country-name {
+  flex-grow: 1;
+  margin-left: 8px;
+}
+
+.country-calling-code {
+  font-size: 12px;
+  color: #888;
+}
